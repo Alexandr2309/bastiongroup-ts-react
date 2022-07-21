@@ -49,7 +49,7 @@ const ShoppingItem: React.FC<IProduct> = ({
         <CardCount value={value} setValue={setValue} />
         <div className='shopping-item__sum'>{(+cost * count).toFixed(1)} руб.</div>
         <div className='shopping-item__remove' onClick={deleteThisProd}>
-          <img src='./img/trash.png' alt='trash' />
+          <img src={require('../../img/trash.png')} alt='trash' />
         </div>
       </div>
     </div>

@@ -241,7 +241,7 @@
       text-transform: capitalize;
     }
     &::before {
-      content: url('./img/user.png');
+      content: url('../img/user.png');
     }
   }
 
@@ -252,7 +252,7 @@
       }
     }
     &::before {
-      content: url('./img/phone.png');
+      content: url('../img/phone.png');
     }
   }
 
@@ -263,7 +263,7 @@
       }
     }
     &::before {
-      content: url('./img/at-sign.png');
+      content: url('../img/at-sign.png');
     }
   }
   &__corp {
@@ -273,7 +273,7 @@
       }
     }
     &::before {
-      content: url('./img/briefcase.png');
+      content: url('../img/briefcase.png');
     }
   }
   &__submit {
@@ -306,7 +306,7 @@
           position: relative;
           &::after {
             content: '';
-            background: #ffffff url('./img/download.png') center no-repeat;
+            background: #ffffff url('../img/download.png') center no-repeat;
             border-radius: 50%;
             position: absolute;
             width: 15px;

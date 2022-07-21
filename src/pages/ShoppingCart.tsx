@@ -27,7 +27,7 @@ const ShoppingCart: React.FC = () => {
               {!shop.length && (
                 <div className='shopping__empty'>
                   <h4>Корзина пуста</h4>
-                  <img src='./img/empty.png' alt='empty' />
+                  <img src={require('../img/empty.png')} alt='empty' />
                 </div>
               )}
               {shop.map((prod) => (
@@ -35,7 +35,7 @@ const ShoppingCart: React.FC = () => {
               ))}
               {shop.length > 0 && (
                 <div className='shopping__trashAll' onClick={clearShoppingCart}>
-                  <img src='./img/trashAll.png' alt='trash' />
+                  <img src={require('../img/trashAll.png')} alt='trash' />
                   Очистить корзину
                 </div>
               )}

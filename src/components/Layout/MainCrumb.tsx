@@ -13,7 +13,7 @@ export function MainCrumb(props: { path: IPath }) {
       </NavLink>
       <span>
         {!props.path.pathname ? (
-          <img src='./img/chevron-down1.png' alt='chevron' />
+          <img src={require('../../img/chevron-down1.png')} alt='chevron' />
         ) : (
           ''
         )}
@@ -21,7 +21,7 @@ export function MainCrumb(props: { path: IPath }) {
       {!props.path.pathname && (
         <>
           <Link to='/'>Интернет-магазин</Link>
-          <img src='./img/chevron-down1.png' alt='chevron' />
+          <img src={require('../../img/chevron-down1.png')} alt='chevron' />
           <Link className='last' to='/'>
             {' '}
             Опоры трубопроводов

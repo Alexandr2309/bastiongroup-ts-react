@@ -18,7 +18,7 @@ export function ImgPreviewer(props: {
         placeholder='ГОСТ продукта'
       />
       <div className='product-img-previewer'>
-        <img src={props.fileSrc || './img/no_photo.png'} alt='previewer' />
+        <img src={props.fileSrc || require('../img/no_photo.png')} alt='previewer' />
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import CategoryItem from './CategoryItem';
 
 const Category: FC = () => {
   return (
-    <Accordion title='Категории' img='./img/all-application.png'>
+    <Accordion title='Категории' img={require('../../../img/all-application.png')}>
       <div style={{ paddingBottom: 20 }}>
         {categoriesData.map((category, i) => (
           <CategoryItem
@@ -17,7 +17,7 @@ const Category: FC = () => {
         ))}
         <div className='category__show-all'>
           <span>Показать все</span>
-          <img src='./img/red-arrow.png' alt='arrow' />
+          <img src={require('../../../img/arrow.png')} alt='arrow' />
         </div>
       </div>
     </Accordion>

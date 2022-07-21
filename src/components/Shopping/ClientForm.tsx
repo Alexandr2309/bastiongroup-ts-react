@@ -70,13 +70,13 @@ const ClientForm = () => {
               type='submit'
             >
               <span>
-                <img src='./img/shoppingW.png' alt='shopping-cart' />
+                <img src={require('../../img/shoppingW.png')} alt='shopping-cart' />
               </span>
               Оформить заказ
             </button>
             <button className='card-item__btn'>
               <span>
-                <img src='./img/file-text.png' alt='file' />
+                <img src={require('../../img/file-text.png')} alt='file' />
               </span>
               Коммерческое предложение
             </button>

@@ -34,7 +34,7 @@ const Accordion: FC<IAccordionProps> = ({
         <div
           className={show ? 'accordion__toggler show' : 'accordion__toggler'}
         >
-          <img src='./img/arrow.png' alt='arrow-toggle' />
+          <img src={require('../../img/arrow.png')} alt='arrow-toggle' />
         </div>
       </div>
       <div

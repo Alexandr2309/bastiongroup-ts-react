@@ -83,7 +83,7 @@ const CardItem: React.FC<IProduct> = ({
         >
           <button className='card-item__btn' onClick={addProductToShoppingCart}>
             <span>
-              <img src='./img/shopping-cart.png' alt='shopping-cart' />
+              <img src={require('../../img/shopping-cart.png')} alt='shopping-cart' />
             </span>
             В корзину
           </button>

@@ -1,8 +1,8 @@
 import React, { FC, useState } from 'react';
-const AllApp = './img/all-application.png';
-const AllAppWhite = './img/all-application-white.png';
-const ListTop = './img/list-top.png';
-const ListTopWhite = './img/list-top-white.png';
+const AllApp = require('../img/all-application.png');
+const AllAppWhite = require('../img/all-application-white.png');
+const ListTop = require('../img/list-top.png');
+const ListTopWhite = require('../img/list-top-white.png');
 
 const Sorts: FC = () => {
   const [display, setDisplay] = useState<'card' | 'list'>('card');
@@ -11,7 +11,7 @@ const Sorts: FC = () => {
     <div className='main__sort'>
       <div className='main__popular'>
         <span>Сначала популярные</span>
-        <img src='./img/sort.png' alt='sort' />
+        <img src={require('../img/sort.png')} alt='sort' />
       </div>
       <div className='main__display'>
         <div

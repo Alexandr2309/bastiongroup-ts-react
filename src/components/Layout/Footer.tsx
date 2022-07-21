@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
     <footer className='footer'>
       <div className='footer__block'>
         <div className='footer__all'>
-          <img src='./img/footer.png' alt='footer' />
+          <img src={require('../../img/footer.png')} alt='footer' />
         </div>
       </div>
     </footer>

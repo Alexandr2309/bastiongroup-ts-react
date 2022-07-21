@@ -14,7 +14,7 @@ const Pagination = () => {
         </div>
         <div className='pagination__pages'>
           <div className='pagination__arrow pagination__arrow-left'>
-            <img src='./img/arrowP.png' alt='arrow' />
+            <img src={require('../../../img/arrowP.png')} alt='arrow' />
           </div>
           <div className='pagination__page active'>1</div>
           <div className='pagination__page'>2</div>
@@ -22,7 +22,11 @@ const Pagination = () => {
           <div className='pagination__page'>4</div>
           <div className='pagination__page'>5</div>
           <div className='pagination__arrow pagination__arrow-right'>
-            <img src='./img/arrowP.png' alt='arrow' style={{transform: 'rotate(180deg)'}}/>
+            <img
+              src={require('../../../img/arrowP.png')}
+              alt='arrow'
+              style={{ transform: 'rotate(180deg)' }}
+            />
           </div>
         </div>
         <div className='pagination__show'>Показать все товары</div>

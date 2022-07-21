@@ -33,7 +33,7 @@ const About = () => {
         Резьбовые части опор обрабатываются антикоррозионной смазкой ПВК по ГОСТ
         19537-83 или ее аналогом.
       </p>
-        <button>Скрыть описание <img src="./img/down.png" alt="downArrow"/></button>
+        <button>Скрыть описание <img src={require('../img/down.png')} alt="downArrow"/></button>
     </div>
   );
 };

@@ -17,7 +17,7 @@ const SubHeader: FC = () => {
   return (
     <div className='header__block container'>
       <div className='header__logo'>
-        <img src='./img/header__logo.png' alt='logo' />
+        <img src={require('../../img/header__logo.png')} alt='logo' />
       </div>
       <div className='header__text'>
         Производитель <br />
@@ -26,7 +26,7 @@ const SubHeader: FC = () => {
       </div>
       <div className='header__catalog'>
         <div className='header__all-application'>
-          <img src='./img/all-application-white.png' alt='all-application' />
+          <img src={require('../../img/all-application-white.png')} alt='all-application' />
         </div>
         <span>Каталог</span>
       </div>
@@ -41,13 +41,13 @@ const SubHeader: FC = () => {
       </div>
       <div className='header__star'>
         <div className='header__star-img'>
-          <img src='./img/star.png' alt='star' />
+          <img src={require('../../img/star.png')} alt='star' />
         </div>
         <div className='header__star-text'>Избранное</div>
       </div>
       <div className='header__shopping' onClick={e => na('../shopping')}>
         <div className='header__shopping-img'>
-          <img src='./img/shoping.png' alt='shopping' />
+          <img src={require('../../img/shoping.png')} alt='shopping' />
           <div className='header__shopping-count'>
             {productsShopping.length}
           </div>
