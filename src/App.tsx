@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles/Aps.scss';
 import Layout from './components/Layout/Layout';
-import {Navigate, Route, Routes, useLocation} from "react-router-dom";
+import {Navigate, Route, Routes} from "react-router-dom";
 import MainPage from "./pages/MainPage";
 import Types from './pages/Types';
 import Products from "./pages/Produсts";
@@ -12,11 +12,11 @@ function App() {
     <div className=''>
       <Layout>
           <Routes>
-              <Route path="/" element={<MainPage/>}/>
+              <Route path="" element={<MainPage/>}/>
               <Route path="/types" element={<Types/>}/>
               <Route path="/products" element={<Products/>}/>
               <Route path="/shopping" element={<ShoppingCart/>}/>
-              <Route path="*" element={<Navigate to="/"/>} />
+              <Route path="*" element={<Navigate to=""/>} />
           </Routes>
       </Layout>
     </div>
