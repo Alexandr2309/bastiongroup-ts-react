@@ -6,19 +6,19 @@ export function HeaderTop() {
     <div className='header__block container'>
       <nav className='header__nav head-nav'>
         <div className='head-nav__links'>
-          <NavLink to='/types' className='head-nav__link'>
+          <NavLink to='/bastiongroup-ts-react/types' className='head-nav__link'>
             Типы продуктов
           </NavLink>
-          <NavLink to='/products' className='head-nav__link'>
+          <NavLink to='/bastiongroup-ts-react/products' className='head-nav__link'>
             Продукты
           </NavLink>
-          <NavLink to='/benefits' className='head-nav__link'>
+          <NavLink to='/bastiongroup-ts-react/benefits' className='head-nav__link'>
             Выгоды для вас
           </NavLink>
-          <NavLink to='/security' className='head-nav__link'>
+          <NavLink to='/bastiongroup-ts-react/security' className='head-nav__link'>
             Гарантии
           </NavLink>
-          <NavLink to='/contacts' className='head-nav__link'>
+          <NavLink to='/bastiongroup-ts-react/contacts' className='head-nav__link'>
             Контакты
           </NavLink>
         </div>

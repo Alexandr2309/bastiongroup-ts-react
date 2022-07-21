@@ -8,15 +8,14 @@ export function MainCrumb(props: { path: IPath }) {
       className='crumb__item'
       style={{ display: 'flex', alignItems: 'center', gap: 15 }}
     >
-      <NavLink className={!props.path ? 'last' : ''} to='/'>
+      <NavLink
+        className={!props.path ? 'last' : ''}
+        to='/bastiongroup-ts-react'
+      >
         Главная
       </NavLink>
       <span>
-        {!props.path.pathname ? (
-          <img src={require('../../img/chevron-down1.png')} alt='chevron' />
-        ) : (
-          ''
-        )}
+        <img src={require('../../img/chevron-down1.png')} alt='chevron' />
       </span>
       {!props.path.pathname && (
         <>

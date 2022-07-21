@@ -45,7 +45,7 @@ const SubHeader: FC = () => {
         </div>
         <div className='header__star-text'>Избранное</div>
       </div>
-      <div className='header__shopping' onClick={e => na('../shopping')}>
+      <div className='header__shopping' onClick={e => na('/bastiongroup-ts-react/shopping')}>
         <div className='header__shopping-img'>
           <img src={require('../../img/shoping.png')} alt='shopping' />
           <div className='header__shopping-count'>

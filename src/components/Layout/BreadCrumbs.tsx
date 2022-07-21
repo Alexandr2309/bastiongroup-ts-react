@@ -13,7 +13,7 @@ const BreadCrumbs: FC = () => {
   const location = useLocation();
 
   useEffect(() => {
-    const route = location.pathname.match(/\w+/i);
+    const route = location.pathname.match(/(?<=\/)\w+(?!\-)$/i);
     if (route) {
       // @ts-ignore
       const name: string = crumbs[route[0]];
@@ -33,7 +33,7 @@ const BreadCrumbs: FC = () => {
             className='crumb__item'
             style={{ display: 'flex', alignItems: 'center', gap: 14 }}
           >
-            <Link to={`/${path.relativePath}`} className='last'>
+            <Link to={`/bastiongroup-ts-react/${path.relativePath}`} className='last'>
               {path.pathname}
             </Link>
           </div>
