@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/bastiongroup-ts-react/static/css/main.3e75ebcb.css",
+    "main.js": "/bastiongroup-ts-react/static/js/main.67b350ed.js",
+    "index.html": "/bastiongroup-ts-react/index.html",
+    "main.3e75ebcb.css.map": "/bastiongroup-ts-react/static/css/main.3e75ebcb.css.map",
+    "main.67b350ed.js.map": "/bastiongroup-ts-react/static/js/main.67b350ed.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e75ebcb.css",
+    "static/js/main.67b350ed.js"
+  ]
+}
