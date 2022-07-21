@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/bastiongroup-ts-react/static/css/main.3e75ebcb.css",
-    "main.js": "/bastiongroup-ts-react/static/js/main.67b350ed.js",
+    "main.js": "/bastiongroup-ts-react/static/js/main.ee69c79e.js",
     "index.html": "/bastiongroup-ts-react/index.html",
     "main.3e75ebcb.css.map": "/bastiongroup-ts-react/static/css/main.3e75ebcb.css.map",
-    "main.67b350ed.js.map": "/bastiongroup-ts-react/static/js/main.67b350ed.js.map"
+    "main.ee69c79e.js.map": "/bastiongroup-ts-react/static/js/main.ee69c79e.js.map"
   },
   "entrypoints": [
     "static/css/main.3e75ebcb.css",
-    "static/js/main.67b350ed.js"
+    "static/js/main.ee69c79e.js"
   ]
 }
