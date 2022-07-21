@@ -157,7 +157,7 @@ export function addNewProduct(
 
   if (!obj.cost || !/^\d+\.\d$/i.test(<string>obj.cost))
     return alert('Неверный формат цены продукта');
-  if(+obj.cost > 9990) return alert('Максимальная сумма товара - 9990 руб!')
+  if (+obj.cost > 9990) return alert('Максимальная сумма товара - 9990 руб!');
   setAction({ ...obj, cost: parseFloat(obj.cost.toString()) });
 
   if (!/^[A-Za-zА-Яа-я]+\s\d+-*/i.test(obj.gost))
@@ -315,7 +315,7 @@ export const sendOrder: ISendOrderParams = function (shop, userInfo, sumAll) {
   );
 
   if (isHaveErr)
-    return alert('Проверьте введённые данные и попробуйте ещё раз1');
+    return alert('Проверьте введённые данные и попробуйте ещё раз!');
 
   const arrayToLog: IProductToLog[] = shop.map((elem) => ({
     id: elem.id,
@@ -329,7 +329,7 @@ export const sendOrder: ISendOrderParams = function (shop, userInfo, sumAll) {
 
   console.info('Полная информация из state', shop);
 
-  alert('Ваш заказ был успешно доставлен, поздавляем!');
+  alert('Ваш заказ был успешно доставлен, поздравляем!');
 };
 
 export const helpChangeUserState: IHelpChangeUserState = (prop, e) => {

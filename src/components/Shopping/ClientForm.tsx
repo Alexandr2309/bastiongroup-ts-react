@@ -1,9 +1,9 @@
 import React, { useMemo, useState } from 'react';
-import {useAppDispatch, useAppSelector} from '../../hooks/redux';
+import { useAppDispatch, useAppSelector } from '../../hooks/redux';
 import { sendOrder, translate, translateBack } from '../../utils/helpFunc';
 import { IUserInfo } from '../../types/models';
 import ClientInput from './ClientInput';
-import {deleteProductsFromShopping} from "../../store/reducers/products";
+import { deleteProductsFromShopping } from '../../store/reducers/products';
 
 const ClientForm = () => {
   const dispatch = useAppDispatch();
@@ -24,7 +24,8 @@ const ClientForm = () => {
   }, [shop]);
 
   function sendFinalResult() {
-    sendOrder(shop, userInfo, sumAll);
+    const isTrue: void | undefined = sendOrder(shop, userInfo, sumAll);
+    if (isTrue === undefined) return;
     setUserInfo({
       fio: '',
       email: '',
@@ -70,7 +71,10 @@ const ClientForm = () => {
               type='submit'
             >
               <span>
-                <img src={require('../../img/shoppingW.png')} alt='shopping-cart' />
+                <img
+                  src={require('../../img/shoppingW.png')}
+                  alt='shopping-cart'
+                />
               </span>
               Оформить заказ
             </button>

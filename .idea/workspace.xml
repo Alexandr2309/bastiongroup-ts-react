@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d02ae359-4f35-4cf5-bdc0-f11c7a576522" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/routes/RoutesConfig.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/BreadCrumbs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/BreadCrumbs.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/HeaderTop.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/HeaderTop.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/MainCrumb.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/MainCrumb.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/SubHeader.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/SubHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Shopping/ClientForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Shopping/ClientForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/models.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/models.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/helpFunc.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/helpFunc.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +119,7 @@
       <workItem from="1658224934905" duration="2030000" />
       <workItem from="1658267856807" duration="33623000" />
       <workItem from="1658353980236" duration="34504000" />
-      <workItem from="1658400610161" duration="7607000" />
+      <workItem from="1658400610161" duration="8806000" />
     </task>
     <servers />
   </component>
