@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/bastiongroup-ts-react/static/css/main.070b3712.css",
-    "main.js": "/bastiongroup-ts-react/static/js/main.c36a51f6.js",
+    "main.js": "/bastiongroup-ts-react/static/js/main.dde6234f.js",
     "static/media/footer.png": "/bastiongroup-ts-react/static/media/footer.d7d88058a4922e1c24db.png",
     "static/media/no_photo.png": "/bastiongroup-ts-react/static/media/no_photo.72b6bc0b2a02d45f4d0f.png",
     "static/media/plug5.png": "/bastiongroup-ts-react/static/media/plug5.7d77e57ecbe36790c138.png",
@@ -15,10 +15,10 @@
     "static/media/plug2.png": "/bastiongroup-ts-react/static/media/plug2.cbf60973cd100a66aecb.png",
     "index.html": "/bastiongroup-ts-react/index.html",
     "main.070b3712.css.map": "/bastiongroup-ts-react/static/css/main.070b3712.css.map",
-    "main.c36a51f6.js.map": "/bastiongroup-ts-react/static/js/main.c36a51f6.js.map"
+    "main.dde6234f.js.map": "/bastiongroup-ts-react/static/js/main.dde6234f.js.map"
   },
   "entrypoints": [
     "static/css/main.070b3712.css",
-    "static/js/main.c36a51f6.js"
+    "static/js/main.dde6234f.js"
   ]
 }
