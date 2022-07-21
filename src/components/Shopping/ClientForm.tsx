@@ -25,6 +25,7 @@ const ClientForm: React.FC = () => {
 
   function sendFinalResult() {
     const isTrue: void | undefined | boolean = sendOrder(shop, userInfo, sumAll);
+
     if (!isTrue) return;
     setUserInfo({
       fio: '',
