@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700;800&display=swap');
+@import './var';
+@import './reset';
+@import './header';
+@import './Accordion';
+@import './MainPage';
+@import './Pagination';
+@import "./Shopping";
+
+@media (min-width: 575.98px) {
+  .container {
+    padding: 0 calc(50% - 270px);
+  }
+}
+
+@media (min-width: 767.98px) {
+  .container {
+    padding: 0 calc(50% - 360px);
+  }
+}
+
+@media (min-width: 991.98px) {
+  .container {
+    padding: 0 calc(50% - 480px);
+  }
+}
+
+@media (min-width: 1199.98px) {
+  .container {
+    padding: 0 calc(50% - 547px);
+  }
+}
+
+body {
+  & * {
+    input, * {
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+  margin: 0;
+  background-color: $background-color;
+  & * {
+    line-height: 1.2;
+  }
+  font-family: 'Fira Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.footer {
+  & img {
+    width: 100%;
+    height: auto;
+  }
+}
+.crumb {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  & * {
+    font-size: 13px;
+    color: $gray-text;
+    .last {
+      color: black;
+      font-weight: 500;
+    }
+  }
+}

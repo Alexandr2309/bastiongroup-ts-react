@@ -1,0 +1,322 @@
+@import './var';
+
+.shopping {
+  &__block {
+  }
+
+  &__main {
+    //padding: 0px 0px 0px 20px;
+    background: #ffffff;
+    display: flex;
+    margin: 31px 0px 40px;
+  }
+
+  &__list {
+    flex: 1 1 75.33%;
+    border-right: 1px solid $border-color;
+  }
+  &__empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    & h4 {
+      text-align: center;
+      font-size: 30px;
+      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+    & img {
+      max-width: 300px;
+      height: auto;
+      transform: translateX(-20px);
+    }
+  }
+  &__order {
+    flex: 1 1 24.67%;
+
+    & h3 {
+      padding-left: 20px;
+      padding-top: 18.5px;
+      padding-bottom: 18.5px;
+      margin-bottom: 18px;
+      border-bottom: 1px solid $border-color;
+    }
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+    padding-right: 40px;
+    & .number {
+    }
+  }
+  &-item {
+  }
+  &__item {
+    &:first-child {
+      padding-top: 18px;
+    }
+  }
+  &-form {
+  }
+
+  &__form__wrapper {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 35px;
+    & h5 {
+      font-size: 15px;
+      font-weight: 400;
+      letter-spacing: 0.009em;
+      color: #b3b3b3;
+    }
+  }
+
+  &__form {
+  }
+  &__trashAll {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    gap: 13px;
+    justify-content: flex-end;
+    color: $icon-color;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.009em;
+    padding: 30px 30px 36px;
+  }
+  &__total {
+    display: flex;
+    justify-content: space-between;
+    margin: 43px 0px 20px;
+    &-text {
+      font-weight: 500;
+      font-size: 18px;
+      letter-spacing: 1px;
+      color: #000000;
+    }
+    &-sum {
+      font-weight: 500;
+      font-size: 18px;
+      letter-spacing: 1px;
+      color: #c93e33;
+    }
+  }
+
+  &__submit {
+  }
+  &__warning {
+    padding: 29.5px 0px;
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+.shopping-item {
+  //display: flex;
+  border-bottom: 1px solid $border-color;
+  &__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+    max-width: 120px;
+    max-height: 120px;
+    width: 100%;
+    & img {
+      max-width: 120px;
+      max-height: 120px;
+    }
+  }
+
+  &__info {
+    margin-right: 13.5%;
+    max-width: 206px;
+    width: 100%;
+  }
+
+  &__gost {
+    margin-top: 0px;
+    margin-bottom: 6px;
+  }
+
+  &__title {
+    margin-top: 0px;
+    margin-bottom: 16px;
+  }
+
+  &__cost {
+    font-weight: 700;
+    color: #b3b3b3;
+  }
+  & .number {
+    //margin-left: auto;
+  }
+  &__sum {
+    max-width: 100px;
+    margin-left: 40px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height */
+    flex: 1 1 auto;
+    letter-spacing: 0.009em;
+
+    color: #000000;
+  }
+
+  &__remove {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 1 auto;
+    margin-left: 50px;
+  }
+}
+
+.shopping-form {
+  &__field {
+    position: relative;
+    &.err {
+      border-bottom: 2px solid red;
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        transform: translateY(130%);
+        font-size: 10px;
+        color: red;
+      }
+    }
+    &::before {
+      position: absolute;
+      bottom: 7px;
+      padding-left: 5px;
+    }
+    & input {
+      border: none;
+      font-size: 15px;
+      line-height: 18px;
+      letter-spacing: 0.009em;
+      color: #000000;
+      width: 100%;
+      border-bottom: 1px solid $border-color;
+      padding-left: 28px;
+      padding-bottom: 8px;
+      margin-top: 25px;
+      &.spec {
+        margin-top: 43px;
+      }
+    }
+    & > label {
+      transition: all 0.2s linear;
+      position: absolute;
+      top: 100%;
+      transform: translateY(calc(-100% - 8px));
+      left: 28px;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 18px;
+      letter-spacing: 0.009em;
+
+      color: #b3b3b3;
+      &.focus {
+        font-weight: 400;
+        font-size: 12px;
+        left: 0;
+        top: 8px;
+        transform: translateY(0);
+      }
+    }
+  }
+  &__fio {
+    &.err {
+      &::after {
+        content: 'Неверный формат';
+      }
+    }
+    & input {
+      text-transform: capitalize;
+    }
+    &::before {
+      content: url('./img/user.png');
+    }
+  }
+
+  &__phone {
+    &.err {
+      &::after {
+        content: 'Формат не поддерживается';
+      }
+    }
+    &::before {
+      content: url('./img/phone.png');
+    }
+  }
+
+  &__email {
+    &.err {
+      &::after {
+        content: 'Данные не действительны';
+      }
+    }
+    &::before {
+      content: url('./img/at-sign.png');
+    }
+  }
+  &__corp {
+    &.err {
+      &::after {
+        content: 'Проверьте корректность данных';
+      }
+    }
+    &::before {
+      content: url('./img/briefcase.png');
+    }
+  }
+  &__submit {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.009em;
+    & > button {
+      &:first-child {
+        background-color: $icon-color;
+        align-items: center;
+        color: #ffffff;
+      }
+      &:last-child {
+        background: #ffffff;
+        margin-top: 15px;
+        border: 1px solid #c93e33;
+        border-radius: 4px;
+        color: $icon-color;
+        word-wrap: break-word;
+        padding: 12px 28px;
+        text-align: left;
+        align-items: center;
+        & span {
+          background: rgba(#c93e33, 0.1);
+          border-radius: 2px;
+          padding: 6px 4px;
+          position: relative;
+          &::after {
+            content: '';
+            background: #ffffff url('./img/download.png') center no-repeat;
+            border-radius: 50%;
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            bottom: -3px;
+            right: -4px;
+          }
+        }
+      }
+    }
+  }
+}
+

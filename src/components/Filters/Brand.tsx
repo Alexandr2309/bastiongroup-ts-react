@@ -1,0 +1,1 @@
+import React from 'react';import Accordion from "../UI/Accordion";const Brand: React.FC = () => {    return (        <Accordion title="Бренд" customStyle="help">            <span></span>        </Accordion>    );};export default Brand;

@@ -1,0 +1,1 @@
+import React from "react";export function Filters() {    return (        <div className='main__filters'>      <span>        <img src='./img/setting-config.png' alt='config'/>      </span>            <h3>Фильтры</h3>        </div>    );}

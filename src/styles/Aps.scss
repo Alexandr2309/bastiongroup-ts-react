@@ -1,0 +1,120 @@
+@import 'var';
+.App {
+  text-align: center;
+}
+.types, .page {
+  margin-bottom: 40px;
+  &__block, .page__block {
+    background-color: white;
+    padding: 30px;
+  }
+  &__title, .page__title {
+    color: black;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: left;
+  }
+
+  &__form {
+  }
+}
+
+.form {
+  &-types {
+  }
+}
+
+.form-types, .form-products {
+  margin-top: 15px;
+  & label {
+    text-align: left;
+    color: $gray-text;
+    font-size: 12px;
+  }
+  & input {
+    border: none;
+    &[type="text"],&[type="number"] {
+      border-bottom: 1px solid $background-color;
+      &::placeholder {
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: 0.009em;
+      }
+    }
+    &[type='submit'] {
+      margin-top: 21px;
+      padding: 12px 32px;
+      background-color: $icon-color;
+      color: white;
+      font-weight: 500;
+      font-size: 15px;
+      border-radius: 4px;
+    }
+  }
+
+  &__item, .form-item {
+    &:last-of-type {
+      margin-top: 20px;
+    }
+    display: flex;
+    gap: 6px;
+    flex-direction: column;
+  }
+}
+.form-products {
+  & select {
+    align-self: start;
+    width: 25%;
+    font-weight: 500;
+    color: #444;
+    padding: .6em 1.4em .5em .8em;
+    box-sizing: border-box;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+    border-radius: .5em;
+    background-color: #fff;
+    &:hover { border-color: #888; }
+    &:focus { border-color: #aaa;
+      box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+      box-shadow: 0 0 0 3px -moz-mac-focusring;
+      color: #222;
+      outline: none;
+    }
+  }
+  & .form-item {
+    &:not(:first-child) {
+      margin-top: 20px;
+    }
+  }
+  & .product-img-previewer {
+    max-width: 150px;
+    height: auto;
+  }
+}
+#product-img {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+#label-product-img {
+  align-self: start;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 15px;
+  transition: color, background 0.18s ease-in-out;
+  border: 1px solid black;
+  color: #333;
+  &:hover {
+    border: none;
+    color: white;
+    background: $icon-color;
+  }
+}
