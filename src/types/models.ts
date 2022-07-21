@@ -80,7 +80,7 @@ export interface IUserInfo {
   corp: string;
 }
 export interface ISendOrderParams {
-  (shop: IProduct[], userInfo: IUserInfo, sumAll: number):  void | undefined;
+  (shop: IProduct[], userInfo: IUserInfo, sumAll: number):  void | undefined | boolean;
 }
 export interface ILogFinalInfoParams {
   (userInfo: IUserInfo, sumAll: number, arrayToLog: IProductToLog[]): void;

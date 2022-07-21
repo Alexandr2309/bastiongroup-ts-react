@@ -1,11 +1,11 @@
-import React, { useMemo, useState } from 'react';
-import { useAppDispatch, useAppSelector } from '../../hooks/redux';
-import { sendOrder, translate, translateBack } from '../../utils/helpFunc';
-import { IUserInfo } from '../../types/models';
+import React, {useMemo, useState} from 'react';
+import {useAppDispatch, useAppSelector} from '../../hooks/redux';
+import {sendOrder} from '../../utils/helpFunc';
+import {IUserInfo} from '../../types/models';
 import ClientInput from './ClientInput';
-import { deleteProductsFromShopping } from '../../store/reducers/products';
+import {deleteProductsFromShopping} from '../../store/reducers/products';
 
-const ClientForm = () => {
+const ClientForm: React.FC = () => {
   const dispatch = useAppDispatch();
   const { productsShopping: shop } = useAppSelector((state) => state.products);
   const [userInfo, setUserInfo] = useState<IUserInfo>({
@@ -24,8 +24,9 @@ const ClientForm = () => {
   }, [shop]);
 
   function sendFinalResult() {
-    const isTrue: void | undefined = sendOrder(shop, userInfo, sumAll);
-    if (isTrue === undefined) return;
+    const isTrue: void | undefined | boolean = sendOrder(shop, userInfo, sumAll);
+    console.log(isTrue)
+    if (!isTrue) return;
     setUserInfo({
       fio: '',
       email: '',

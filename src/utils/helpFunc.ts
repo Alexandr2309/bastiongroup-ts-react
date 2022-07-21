@@ -322,7 +322,7 @@ export const sendOrder: ISendOrderParams = function (shop, userInfo, sumAll) {
     cost: +elem.cost,
     title: elem.title,
     count: +elem.count,
-    sum: +elem.cost * +elem.count,
+    sum: +elem.cost * +elem.count
   }));
 
   logFinalInfo(userInfo, sumAll, arrayToLog);
@@ -330,6 +330,7 @@ export const sendOrder: ISendOrderParams = function (shop, userInfo, sumAll) {
   console.info('Полная информация из state', shop);
 
   alert('Ваш заказ был успешно доставлен, поздравляем!');
+  return true;
 };
 
 export const helpChangeUserState: IHelpChangeUserState = (prop, e) => {
