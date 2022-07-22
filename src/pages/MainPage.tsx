@@ -12,7 +12,9 @@ const MainPage: FC = () => {
   const dispatch = useAppDispatch();
 
   useEffect(() => {
-    dispatch(clearFilters(true));
+    return function() {
+      dispatch(clearFilters(true));
+    }
   }, []);
 
   return (
