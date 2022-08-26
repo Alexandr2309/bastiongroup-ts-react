@@ -1,4 +1,4 @@
-## Сайт доступен по [ссылке](https://alexandr2309.github.io/slonum/)
+## Сайт доступен по [ссылке](https://alexandr2309.github.io/bastiongroup-ts-react/)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
